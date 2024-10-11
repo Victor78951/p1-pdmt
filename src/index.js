@@ -2,8 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import ReactDom from 'react-dom'
 import LembreteEntrada from './LembreteEntrada';
-
-
+import LembreteLista from './LembreteLista';
 
 
 const App = () => {
@@ -15,9 +14,14 @@ const App = () => {
 
   return (
     <div className="container">
+
         <div className="col-md-6">
           <LembreteEntrada adicionarLembrete={adicionarLembrete} />
-        </div>    
+        </div>
+        <div className="col-md-6">
+          <LembreteLista lembretes={lembretes} />
+        </div>
+      
     </div>
   );
 }
