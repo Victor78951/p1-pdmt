@@ -1,0 +1,32 @@
+.container {
+    display: flex; /* Define o contêiner como flex */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Altura total da viewport */
+    border: 2px solid black /*Mostra a borda em cor preta*/
+}
+
+.form-submit {
+    display: flex; /* Define o contêiner como flex */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+
+}
+
+.btn-primary {
+    margin-top: 10px; /*Adiciona espaçamento na margin de cima*/
+}
+
+.list-group-item {
+    margin: 10px; /* Adiciona espaçamento entre os lembretes */
+    padding: 15px; /* Adiciona espaço interno */
+    border: 1px solid #000; /* Borda para os lembretes */
+    border-radius: 5px; /* Cantos arredondados */
+  }
+
+  .lembrete-lista {
+    max-height: 300px; /* Defina uma altura máxima */
+    overflow-y: auto; /* Ativa a rolagem vertical quando necessário */
+    width: 100%; /* Para ocupar a largura total */
+}

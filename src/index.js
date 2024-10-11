@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ReactDom from 'react-dom'
 import LembreteEntrada from './LembreteEntrada';
 import LembreteLista from './LembreteLista';
+import './styles.css'
 
 
 const App = () => {
