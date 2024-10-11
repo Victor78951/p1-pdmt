@@ -1,11 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
 import ReactDom from 'react-dom'
+import LembreteEntrada from './LembreteEntrada';
+
+
 
 
 const App = () => {
+  const [lembretes, setLembretes] = useState([]);
+
+  const adicionarLembrete = (novoLembrete) => {
+    setLembretes([...lembretes, novoLembrete]);
+  };
+
   return (
     <div className="container">
-      <h1 className="text-center mt-4">Hello, lembretes!</h1>
+        <div className="col-md-6">
+          <LembreteEntrada adicionarLembrete={adicionarLembrete} />
+        </div>    
     </div>
   );
 }
